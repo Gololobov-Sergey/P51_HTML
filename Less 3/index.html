@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            ol
+            {
+                list-style-type: none;
+                counter-reset: number;
+            }
+            
+            .list1>li::before
+            {
+                content: counter(number)') ';
+                counter-increment: number;
+                color:red;
+                font-weight: bold;
+            }
+            
+            ul
+            {
+                /*list-style-type: circle;*/
+                list-style-position: inside;
+                list-style-image: url(pics/arrow-right-bold-custom.png);
+            }
+            
+            .list2
+            {
+                list-style-type: lower-alpha;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et hic doloribus cum sint, illum debitis, quibusdam iste inventore corporis, adipisci sequi earum voluptate perferendis labore. Ut tenetur cumque adipisci, incidunt optio pariatur sunt quae qui ratione amet dolores facilis consequuntur maxime error dolor quos eaque recusandae quas reprehenderit unde. Necessitatibus.</p>
+        <ol class="list1">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>
+                Lorem ipsum dolor sit amet.
+                <ol class="list2">
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                        </ul>
+                    </li>
+                    <li>Lorem ipsum dolor.</li>
+                </ol>
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ol>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia magnam, minus inventore unde, aspernatur facere eos. Dolores illum molestias corrupti minus nobis reprehenderit perspiciatis! Eveniet nulla et aspernatur repellat nisi molestias ipsa id, alias nobis voluptate aliquam, deleniti perspiciatis impedit reiciendis corrupti quisquam adipisci omnis. Modi asperiores ullam, quam expedita.
+        </p>
+        <ol start="6">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li value="30">Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ol>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident ad debitis nihil suscipit quas dicta quae, laboriosam corporis aspernatur!</p>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto molestias dolorum nisi. Voluptate officia rerum, soluta eaque earum necessitatibus! Amet debitis optio, aut possimus. Laboriosam in quidem ipsam, repudiandae neque minus corrupti soluta aut amet eum vero tempore laudantium!</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi obcaecati, hic nobis magnam facere minima ipsam est in quia. Obcaecati quasi quisquam minus quos iure suscipit ratione nostrum, animi eligendi possimus! Eligendi pariatur veritatis architecto unde, exercitationem eos cumque quidem!</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aliquid quo in optio sed cumque corrupti alias illo dolore, ullam molestias animi consectetur, nobis praesentium natus dolores vitae, rem minus consequatur? Ea rem iste impedit earum, vel pariatur animi ducimus.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum sapiente odit ducimus non iure odio nihil earum dolorum veniam eius distinctio maxime fugiat assumenda maiores voluptates, quia aliquam adipisci et obcaecati tempora neque! Ad quo totam, numquam porro reiciendis.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates numquam fugiat, minus laudantium rem. Nihil, omnis error. Vero hic eum illum quas itaque beatae ut, ullam consequatur distinctio accusantium sed obcaecati tempore recusandae porro, velit a molestias sint cumque nobis.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ab nostrum ipsum nesciunt illo autem quam nemo suscipit neque doloremque possimus omnis non distinctio vero voluptas, repellat pariatur architecto temporibus!</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti, molestiae sunt tenetur distinctio, sint totam maiores eaque nulla ratione nam. Itaque consequuntur, ipsum debitis accusamus sit, vel, quas sed fuga explicabo amet, voluptates. Repellendus eveniet culpa ipsa eius animi!</dd>
+            <dt>Python</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quo esse quisquam dignissimos alias distinctio incidunt eos libero rerum cupiditate recusandae culpa porro sed placeat voluptatem repudiandae odio ad, impedit, ipsa aliquam explicabo, dicta eligendi! Doloribus rerum, nisi a, praesentium officia labore dolores eaque possimus delectus dolor veritatis inventore ab.</dd>
+        </dl>
+    </body>
+</html>
