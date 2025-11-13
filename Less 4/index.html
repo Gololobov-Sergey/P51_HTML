@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            ul
+            {
+                background-color: #ed9dae;
+                color: white;
+                font-family: Segoe UI;
+                font-size: 18px;
+                padding: 10px 15px 10px 40px;
+                counter-reset: number;
+                list-style-type: none;
+            }
+            
+            li
+            {
+                background-color: #c66376;
+                margin: 15px 10px 15px -10px;
+                padding: 10px 10px 10px 0;
+            }
+            
+            li::before
+            {
+                content: counter(number)'. ';
+                counter-increment: number;
+                padding: 0 10px 0 15px;
+            }
+            
+            span
+            {
+                background-color: #9e354a;
+                padding: 10px 20px;
+            }
+            
+            li::marker
+            {
+                background-color: #c66376;  
+            }
+        
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><span>Apple</span></li>
+            <li><span>Oranges</span></li>
+            <li><span>Pineapple</span></li>
+            <li><span>Pear</span></li>
+            <li><span>Cherry</span></li>
+        </ul>
+       
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            
+            ul
+            {
+                list-style-type: none;
+            }
+            
+            li
+            {
+                padding: 10px 25px;
+            }
+            
+            li:nth-child(odd)
+            {
+                background-color: #9ab6c1;
+            }
+            
+            li:nth-child(even)
+            {
+                background-color: #7db4c9;
+            }
+            
+            li::before
+            {
+                content: url(pics/unchecked_16.png);
+                padding: 20px;
+            }
+            
+            li.checked::before
+            {
+                content: url(pics/checked_16.png);
+            }
+            
+            li.checked
+            {
+                background-color: #ccd1da;
+                text-decoration: line-through;
+            }
+            
+            li::after
+            {
+                content: url(pics/close-custom.png);
+                padding-left: 20px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Item 1</li>
+            <li class="checked">Item 234534</li>
+            <li>Item 323</li>
+            <li>Item 4</li>
+            <li class="checked">Item 5234234</li>
+            <li>Item 623</li>
+            <li>Item 7444</li>
+            <li>Item 82</li>
+            <li class="checked">Item 9</li>
+            <li>Item 10</li>
+        </ul>
+        
+    </body>
+</html>
